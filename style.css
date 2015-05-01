@@ -1,0 +1,17 @@
+.font {
+	font-family: cursive, DFKai-sb;
+}
+
+
+.full {
+}
+
+#luffy, #html5, #shit, #clock, #css {
+	border: 0px;
+	box-shadow: 0px 0px 0px 0px;
+	background-color: none;
+}
+
+section span {
+	color: red;
+}

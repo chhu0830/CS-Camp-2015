@@ -1,8 +1,161 @@
+<!DOCTYPE HTML>
 <html>
 	<head>
-		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="./style.css">
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<title>CS-WEB</title>
 	</head>
 	<body>
-		
+		<div class="reveal font">
+			<div class="slides">
+				<section>
+					<section>
+						<h1 class="font">Web</h1>
+						<a href="http://www.rleonardi.com/interactive-resume/"><img src="./demo.jpg"></a>
+					</section>
+					<section>
+						<img id="luffy" src="./luffy-2.png">
+					</section>
+				</section>
+				<section>
+					<section>
+						<img id="html5" src="HTML5.png" style="height:512px; width:512px;">
+						<h3>
+							<span style="color:red;">H</span>yper<span style="color:red;">T</span>ext <span style="color:red;">M</span>arkup <span style="color:red;">L</span>anguage
+						</h3>
+					</section>
+					<section align="left">
+						<h3 align="center">基本架構</h3>
+						<hr>
+						<p style="float:left">
+						&lt;!DOCTYPE HTML&gt;<br>
+						&lt;html&gt;<br>
+						&nbsp;&nbsp;&lt;head&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt; ... &lt;/title&gt;<br>
+						&nbsp;&nbsp;&lt;/head&gt;<br>
+						&nbsp;&nbsp;&lt;body&gt;<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+						&nbsp;&nbsp;&lt;/body&gt;<br>
+						&lt;/html&gt;
+						</p>
+						<img src="structure.png" style="width:550px; height: 350px; margin-left:50px;">
+					</section>
+					<section>
+						<h1>HTML Tags</h1>
+						<p style="font-size: 48px;">&lt;<span>tagname</span>&gt; content &lt;<span>/tagname</span>&gt;</p>
+					</section>
+					<section>
+						<div><img id="shit" src="./shit.png" style="float:left;"></div>
+						<div><img id="clock" src="./clock.png" style="float:right;"></div>
+					</section>
+					<section align="left">
+						<h3 align="center">常用標籤</h3>
+						<hr>
+						&lt;<span>h1</span>&gt; describes a heading &lt;<span>/h1</span>&gt;<br>
+						&lt;<span>a</span> href="..."&gt; describes a link &lt;<span>/a</span>&gt;<br>
+						&lt;<span>div</span>&gt; describes a block &lt;<span>/div</span>&gt;<br>
+						&lt;<span>p</span>&gt; describes a paragraph &lt;<span>/p</span>&gt;<br>
+						&lt;<span>img</span> src="..." alt="..."&gt; describes a image<br>
+						&lt;<span>br</span>&gt; describes a line break<br>
+						&lt;<span>!--</span> describes a comment <span>--</span>&gt;
+					</section>
+					<section>
+						<pre style="float:left; width:670px; height:400px; margin-top:0px; line-height:24px; font-size:20px; align:left; border-width:5px; border-style:solid;">
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;DEMO&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt; CS-Camp &lt;/h1&gt;
+    &lt;a href="http://camp.cs.nctu.edu.tw/"&gt;交大資工逐夢營&lt;/a&gt;
+    &lt;div&gt; This is a block. &lt;/div&gt;
+    &lt;p&gt; This is a paragraph. &lt;/p&gt;
+    &lt;img src="CS-Camp.png" alt="CS-Camp" style="height:100px;"&gt;
+    There is a &lt;br&gt; line break.
+    &lt;!-- CS-Camp is the best. --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+						</pre>
+						<iframe src="./demo.html" height="400px" width="270px" style="border-style:solid; border-width:5px; float:right; background-color:white;"></iframe>
+					</section>
+				</section>
+				<section>
+					<section>
+						<img id="css" src="./CSS.png" style="height:512px; width:512px;">
+						<h3><span>C</span>ascading <span>S</span>tyle <span>S</span>heets</h3>
+					</section>
+					<section>
+						<h3>CSS Syntax</h3>
+						<hr>
+						<pre style="box-shadow:0 0; font-size: 32px;">
+Selector {
+    Property: value<span>;</span>
+    Property: value<span>;</span>
+    Property: value<span>;</span>
+    ...
+}
+						</pre>
+						<p>記得加<span>分號</span>，因為很重要，所以要說三遍</p>
+					</section>
+					<section>
+						<h1>Selector</h1>
+						<p style="font-size: 40px;"><span>Find</span> HTML elements</p>
+					</section>
+					<section align="left">
+						The <span>element</span> Selector
+						<pre style="font-size:24px;">
+<span>p</span> {
+    ...;
+}						</pre>
+						The <span>id</span> Selector
+						<pre style=" font-size:24px;">
+<span>#</span>id {
+    ...;
+}						</pre>
+						The <span>class</span> Selector
+						<pre style="font-size: 24px;">
+<span>.</span>class {
+    ...;
+}						</pre>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		    Reveal.initialize(
+		    	{
+	                controls: true,
+	                progress: true,
+	                history: true,
+	                center: true,
+
+	                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+	                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+	                // Parallax scrolling
+	                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+	                // parallaxBackgroundSize: '2100px 900px',
+
+	                // Optional libraries used to extend on reveal.js
+	                dependencies: [
+	                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+	                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+	                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+	                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+	                ]
+	            }
+	        );
+    		Reveal.configure({ slideNumber: false });
+		</script>
 	</body>
 </html>
